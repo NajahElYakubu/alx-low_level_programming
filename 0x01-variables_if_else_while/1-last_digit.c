@@ -4,7 +4,7 @@
 
 /**
 *main - program print the last digit of the number stored in the variable n.
-*Return - 0(Success)
+*Return: 0(Success)
 */
 
 int main(void)
@@ -14,9 +14,8 @@ int main(void)
 	int lDigit;
 
 	 srand(time(0));
-	 n = rand() - RAND_MAX / 2;
-	 lDigit = n % 10;
-	 
+	n = rand() - RAND_MAX / 2;
+	lDigit = n % 10;
 	if (lDigit > 5)
 		printf("Last digit of %d is %d and is greater than 5\n", n, lDigit);
 	else if (LDigit < 6 && != 0)

@@ -9,7 +9,7 @@ int main(void)
 {
 	int var;
 
-	for (var = 0, var < 8; var++)
+	for (var = 0; var < 8; var++)
 	{
 		int ii;
 
@@ -32,7 +32,7 @@ int main(void)
 			}
 		}
 	}
-	putcher('\n');
+	putchar('\n');
 	return (0);
 }
 

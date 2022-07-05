@@ -1,0 +1,10 @@
+#include "main"
+
+/**
+ *
+ */
+
+int _abs(int)
+{
+	return ((n <= 0) ? n * -1 : n);
+}

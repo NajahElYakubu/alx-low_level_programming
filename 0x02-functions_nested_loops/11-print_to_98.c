@@ -1,35 +1,66 @@
 #include "main.h"
 
 /**
- * print_to_98 - printing numbers from n to 98
- * @n: number to start from
+ * print - print variable using _putchar
+ * @y: number to start from
  */
 
-void print_to_98(int n)
+void print(int y);
+
+/**
+ * print_to_98 - printing numbers from n to 98
+ * @a: number to start from
+ */
+
+void print_to_98(int a)
 {
-	if (n > 98)
+	int lastnum = 98;
+
+	if (a > lastnum)
 	{
-		while (n >= 98)
+		int n;
+
+		for (n = a; n >= lastnum; n--)
 		{
-			printf("%d", n);
-			if (n != 98)
+			print(n);
+			if (n != lastnum)
 			{
-				printf(",");
+				_putchar(',');
+				_putchar(' ');
 			}
-			n--;
 		}
+
 	}
 	else
 	{
-		while (n <= 98)
+		int x;
+
+		for (x = a; x <= lastnum; x++)
 		{
-			printf("%d", n);
-			if (n != 98)
+			print(x);
+			if (x != lastnum)
 			{
-				printf(",");
+				_putchar(',');
+				_putchar(' ');
 			}
-		n++;
 		}
 	}
-printf("\n");
+	_putchar('\n');
 }
+/**
+ * print - to print
+ * @y: var
+ */
+void print(int y)
+
+{
+	if (y < 0)
+	{
+		_putchar('-');
+		y = -y;
+	}
+	if (y / 10)
+		print(y / 10);
+	_putchar(y % 10 + '0');
+}
+

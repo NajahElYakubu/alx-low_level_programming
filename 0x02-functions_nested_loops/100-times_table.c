@@ -27,7 +27,7 @@ void print_times_table(int n)
 		{
 			mul = x * y;
 			if (y == 0)
-				_putchar('0' + mull);
+				_putchar('0' + mul);
 			else if (mul < 10)
 			{
 				_putchar(' ');

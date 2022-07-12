@@ -1,24 +1,19 @@
-#include <string.h>
 #include "main.h"
 
 /**
  * puts2 - main body
- * @str: pointer to string
+ * @str: variable
  */
 
 void puts2(char *str)
 {
-	int len = strlen(str), i;
+	int i = 0;
 
-	if (len % 2 == 0)
+	while (str[i] != '\0')
 	{
-		for (i = len / 2; i < len; i++)
+		if i % 2 == 0
 			_putchar(str[i]);
-	}
-	else
-	{
-		for (i = (len / 2) + 1; i < len; i++)
-			_putchar(str[i]);
+		i += 1;
 	}
 	_putchar('\n');
 }

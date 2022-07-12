@@ -3,14 +3,11 @@
 
 /**
  * _strlen - lenght of string
- * Return: 0 (Success)
+ * Return: answer
  * @s: variable
  */
 
 int _strlen(char *s)
 {
-	int len;
-
-	len = strlen(s);
-	return (0);
+	return (strlen(s));
 }

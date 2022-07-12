@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * puts2 - main body
+ * puts_half - main body
  * @str: pointer to string
  */
 

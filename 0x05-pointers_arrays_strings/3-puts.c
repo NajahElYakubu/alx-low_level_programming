@@ -1,15 +1,18 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
  * _puts - main body
- * Return: 0 (Success)
  * @str: variable
  */
 
 void _puts(char *str)
 {
-	puts(*str);
+	int i = 0;
 
-	return (0);
+	while (str[i] != '\0')
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 }

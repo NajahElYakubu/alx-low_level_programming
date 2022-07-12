@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * main - main body
+ * main_body - main body
  * Return: 0 (Success)
  */
 
-int main(void)
+int main_body(void)
 {
 	int n1, n2;
 

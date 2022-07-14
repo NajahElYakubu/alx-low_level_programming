@@ -5,11 +5,10 @@
  * _strcat - main body
  * @dest:first string
  * @src: second string
- * Return: 0 (Success)
+ * Return: result
  */
 char *_strcat(char *dest, char *src)
 {
 	strcat(dest, src);
-	
-	return (0);
+	return (dest);
 }

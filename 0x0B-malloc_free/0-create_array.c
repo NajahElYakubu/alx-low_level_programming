@@ -3,7 +3,8 @@
 /**
  * create_array - body of function
  * @size: size of array
- * @c: character 
+ * @c: character
+ * Return: result
  */
 
 char *create_array(unsigned int size, char c)

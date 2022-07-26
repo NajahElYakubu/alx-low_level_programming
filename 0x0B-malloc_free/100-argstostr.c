@@ -5,6 +5,7 @@
  * argstostr - body of function
  * @ac: count
  * @av: vector
+ * Return: result
  */
 char *argstostr(int ac, char **av)
 {
@@ -25,7 +26,7 @@ char *argstostr(int ac, char **av)
 	}
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
-		return(NULL);
+		return (NULL);
 
 	for (i = 0, j = 0; i < ac && j < len; i++)
 	{
